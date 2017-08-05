@@ -1,0 +1,46 @@
+header {
+    height: 200px;
+}
+
+header .logo {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+header .navbar-wrapper {
+    margin-top: 10px;
+}
+
+header .navbar-wrapper .navbar {
+    background-color: #10A1D6;
+    border: 0;
+    border-radius: 0;
+}
+
+header .navbar-wrapper .top-navigation {
+    margin: 0 10%;
+}
+
+header .navbar-wrapper .top-navigation li {
+    color: #60d0fc;
+    text-align: center;
+    width: 160px;
+}
+
+header .navbar-wrapper .top-navigation li.active,
+header .navbar-wrapper .top-navigation li.active:hover,
+header .navbar-wrapper .top-navigation li:hover {
+    background: #12B2F0;
+    color: #fafafa;
+}
+
+header .navbar-wrapper .top-navigation li a {
+    color: inherit;
+    text-transform: uppercase;
+}
+
+header .navbar-wrapper .top-navigation li a:hover,
+header .navbar-wrapper .top-navigation li a:focus {
+    background-color: inherit;
+}
