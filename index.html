@@ -23,8 +23,7 @@
     </head>
     <body>
         <main ng-app="regalConsultancy" ng-controller="AppController as controller">
-			<a href="#/home">home</a>
-            <a href="#/about">about</a>
+			<header class="theme-background" ng-include="'./templates/header/header.html'"></header>
             <div class="container">
 				<div ui-view class="view"></div>
 			</div>

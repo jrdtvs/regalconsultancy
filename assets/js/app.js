@@ -26,9 +26,31 @@ app.config(["$stateProvider", "$urlRouterProvider", "$locationProvider", functio
 				return $ocLazyLoad.load('/templates/about/about.js');
 			}]
 		}
+	}).state('services', {
+		url: '/services',
+		templateUrl : '/templates/services/services.html',
+		controller : 'servicesCtrl',
+		cache: false,
+		resolve : {
+			loadCtrl : ["$ocLazyLoad", function($ocLazyLoad) {
+				return $ocLazyLoad.load('/templates/services/services.js');
+			}]
+		}
+	}).state('contact', {
+		url: '/contact',
+		templateUrl : '/templates/contact/contact.html',
+		controller : 'contactCtrl',
+		cache: false,
+		resolve : {
+			loadCtrl : ["$ocLazyLoad", function($ocLazyLoad) {
+				return $ocLazyLoad.load('/templates/contact/contact.js');
+			}]
+		}
 	});
 }]);
 
-app.controller('AppController', [function() {
-	console.log('main controller');
+app.controller('AppController', ['$scope', '$state', function($scope, $state) {
+	$scope.getCurrentStateName = function() {
+		return $state.current.name;
+	}
 }]);
