@@ -1,0 +1,75 @@
+.home-page-container .container {
+    margin-top: -25%;
+    padding-bottom: 30px;
+}
+
+.home-page-container .home-wrapper {
+    background: #FFFFFF;
+}
+
+.home-page-container .immigration-title {
+    color: #FFFFFF;
+    font-size: 24px; 
+    padding: 10px;
+}
+
+.home-page-container .flex-slider-container {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.home-page-container .have-a-question-wrapper .title,
+.home-page-container .have-a-question-wrapper .timings {
+    font-size: 24px;
+}
+
+.home-page-container .have-a-question-wrapper .contact-no {
+    letter-spacing: 5px;
+    font-size: 60px;
+}
+
+.home-page-container .flex-slider-container .flexslider {
+    border: 0;
+    overflow: hidden;
+}
+
+.home-page-container .assesment-index {
+    font-size: 72px;
+}
+
+.home-page-container .assesment-title {
+    color: #2b2b2b;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.home-page-container .assesment-details {
+    color: #ababab;
+}
+
+.home-page-container .visa-types .visa-category-wrapper {
+    background: #2B2B2B;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.home-page-container .visa-types .visa-category {
+    padding: 10px 10px 0 10px;
+}
+
+.home-page-container .visa-types .visa-category .visa-title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.home-page-container .visa-types .visa-category .visa-summary {
+    color: #ebebeb;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.home-page-container .visa-types .visa-read-more {
+    margin-top: 15px;
+    padding: 10px;
+}

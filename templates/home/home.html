@@ -1,1 +1,76 @@
-hi this is home
+<div class="home-page-container">
+    <div class="flex-slider-container">
+        <flex-slider slide="s in sliderData track by $index" animation="slide" control-nav="false">
+            <li>
+                <img src={{s.img}} />
+                <p class="flex-caption">{{s.caption}}</p>
+            </li>
+        </flex-slider>
+    </div>
+    <div class="container">
+        <div class="col-md-12 no-padding">
+            <div class="blue-background immigration-title">
+                <strong>Immigration Alerts and Updates</strong>
+            </div>
+        </div>
+        <div class="col-md-12 home-wrapper">
+            <div class="col-md-3" ng-repeat="item in assesibilityData">
+                <div class="assesment-index blue-color">
+                    <strong>{{item.index}}.</strong>
+                </div>
+                <div class="assesment-title">
+                    <strong>
+                        {{item.title}}
+                    </strong>
+                </div>
+                <hr />
+                <div class="assesment-details">
+                    {{item.detail}}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 have-a-question-wrapper">
+            <div class="col-md-3">
+                <div class="title">
+                    <strong>
+                        Have Questions? Ask a specialist
+                    </strong>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-no">
+                    <strong>
+                        <i class="fa fa-mobile"></i>
+                        880 123 1234
+                    </strong>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="timings">
+                    <span>7 Days a week</span><br />
+                    <span>From 8:00 AM</span><br />
+                    <span>to 2:00 PM</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 visa-types">
+            <div class="col-md-3" ng-repeat="visa in visasType">
+                <div class="visa-category-wrapper">
+                    <div class="visa-category">
+                        <div class="visa-title">
+                            {{visa.visaType}}
+                        </div>
+                        <div class="visa-summary">
+                            {{visa.visaDesc}}
+                        </div>
+                    </div>
+                    <div class="visa-read-more blue-background">
+                        <strong>
+                            Read More
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
