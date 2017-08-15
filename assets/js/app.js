@@ -54,3 +54,21 @@ app.controller('AppController', ['$scope', '$state', function($scope, $state) {
 		return $state.current.name;
 	}
 }]);
+
+app.directive('readMoreModal', [function() {
+	return {
+		restrict: 'A',
+		scope: {
+			title: '<?',
+			desc: '<?'
+		},
+		link: function(scope, elem, attr) {
+			elem.on('click', function(e) {
+				angular.element(".modal .modal-title").html(scope.title);
+				angular.element(".modal .modal-body").html("Content loading please wait...");
+				angular.element(".modal").modal("show");
+				angular.element(".modal .modal-body").html(scope.desc);
+			});
+		}
+	};
+}]);

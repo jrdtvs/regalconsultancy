@@ -1,0 +1,29 @@
+.services-container {
+	margin: 30px 0;
+}
+
+.services-container .services-types {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.services-container .visa-title {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.services-container .visa-desc {
+	color: #ababab;
+	font-size: 14px;
+}
+
+.services-container .visa-readmore button {
+	font-weight: 700;
+}
+.services-container .visa-readmore button:hover,
+.services-container .visa-readmore button:active,
+.services-container .visa-readmore button:focus {
+	color: #ababab;
+	outline: none;
+	text-decoration: none;
+}
