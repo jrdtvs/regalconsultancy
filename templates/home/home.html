@@ -34,8 +34,8 @@
                 <div class="assesment-details">
                     {{item.detail}}
                 </div>
-				<div ng-if="item.readMore" class="assesment-readmore">
-					<button class="btn btn-link blue-color no-padding">Read More</button>
+				<div class="assesment-readmore">
+					<button class="btn btn-link blue-color no-padding" read-more-modal title="item.readMore.title" desc="item.readMore.desc">Read More</button>
 				</div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                             {{visa.visaDesc}}
                         </div>
                     </div>
-                    <div class="visa-read-more blue-background">
+                    <div class="visa-read-more blue-background" read-more-modal title="visa.readMore.title" desc="visa.readMore.desc">
                         <strong>
                             Read More
                         </strong>

@@ -1,0 +1,49 @@
+.about-container {
+	margin: 30px 0;
+}
+
+.about-container .about-container-title {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.about-container .sub-heading-about {
+	text-transform: uppercase;
+}
+
+.about-container  .about-details {
+	color: #ababab;
+}
+
+.about-container .use-services {
+	text-transform: uppercase;
+}
+
+.about-container .about-img {
+	overflow: hidden;
+}
+
+.about-container .about-details .about-details-para,
+.about-container .use-services-desc,
+.about-container .why-consulting-desc,
+.about-container .migrating-desc  {
+	font-size: 14px;
+}
+
+.about-container .use-services-desc {
+	color: #ababab;	
+}
+
+.about-container .why-consulting {
+	text-transform: uppercase;
+}
+
+.about-container .why-consulting-desc,
+.about-container .migrating-desc {
+	color: #ababab;
+}
+
+.about-container .migrating-wrapper,
+.about-container .sub-heading-migrating {
+	text-transform: uppercase;
+}

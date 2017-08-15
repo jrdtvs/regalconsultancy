@@ -15,6 +15,7 @@ header .navbar-wrapper {
 header .navbar-wrapper .navbar {
     border: 0;
     border-radius: 0;
+	margin-bottom: 0;
 }
 
 header .navbar-wrapper .top-navigation {
@@ -42,4 +43,14 @@ header .navbar-wrapper .top-navigation li a {
 header .navbar-wrapper .top-navigation li a:hover,
 header .navbar-wrapper .top-navigation li a:focus {
     background-color: inherit;
+}
+
+header .logo-wrapper div {
+	display: inline-block;
+}
+
+header .resigter-tag-line {
+	color: #fff;
+	text-transform: uppercase;
+	vertical-align: bottom;	
 }

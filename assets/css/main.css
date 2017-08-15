@@ -8,6 +8,7 @@ body {
 }
 
 span, strong {
+	color: inherit;
     font-size: inherit;
     font-weight: inherit;
 }
@@ -18,4 +19,12 @@ span, strong {
 
 .no-margins {
     margin: 0;
+}
+
+.pd-l-0 {
+	padding-left: 0;
+}
+
+.pd-r-0 {
+	padding-right: 0;
 }
