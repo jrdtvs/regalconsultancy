@@ -3,7 +3,14 @@
         <flex-slider slide="s in sliderData track by $index" animation="slide" control-nav="false">
             <li>
                 <img src={{s.img}} />
-                <p class="flex-caption">{{s.caption}}</p>
+                <div class="flex-caption">
+					<strong>{{::s.caption}}</strong>
+					<ol>
+						<li ng-repeat="program in s.programSupport">
+							{{::program}}
+						</li>
+					</ol>
+				</div>
             </li>
         </flex-slider>
     </div>
@@ -14,7 +21,7 @@
             </div>
         </div>
         <div class="col-md-12 home-wrapper">
-            <div class="col-md-3" ng-repeat="item in assesibilityData">
+            <div class="col-md-3 assesment-wrapper" ng-repeat="item in assesibilityData">
                 <div class="assesment-index blue-color">
                     <strong>{{item.index}}.</strong>
                 </div>
@@ -27,6 +34,9 @@
                 <div class="assesment-details">
                     {{item.detail}}
                 </div>
+				<div ng-if="item.readMore" class="assesment-readmore">
+					<button class="btn btn-link blue-color no-padding">Read More</button>
+				</div>
             </div>
         </div>
         <div class="col-md-12 have-a-question-wrapper">
@@ -54,7 +64,7 @@
             </div>
         </div>
         <div class="col-md-12 visa-types">
-            <div class="col-md-3" ng-repeat="visa in visasType">
+            <div class="col-md-3 visa-outer-wrapper" ng-repeat="visa in visasType">
                 <div class="visa-category-wrapper">
                     <div class="visa-category">
                         <div class="visa-title">

@@ -4,22 +4,21 @@ header {
 
 header .logo {
     display: inline-block;
-    margin-left: 10%;
     margin-top: 20px;
 }
 
 header .navbar-wrapper {
+	background-color: #10A1D6;
     margin-top: 10px;
 }
 
 header .navbar-wrapper .navbar {
-    background-color: #10A1D6;
     border: 0;
     border-radius: 0;
 }
 
 header .navbar-wrapper .top-navigation {
-    margin: 0 10%;
+    /*margin: 0 10%;*/
 }
 
 header .navbar-wrapper .top-navigation li {

@@ -1,10 +1,27 @@
 .home-page-container .container {
-    margin-top: -25%;
+    margin-top: -20%;
     padding-bottom: 30px;
 }
 
 .home-page-container .home-wrapper {
     background: #FFFFFF;
+}
+
+.home-page-container .home-wrapper .assesment-readmore {
+	bottom: 0;
+	position: absolute;
+}
+
+.home-page-container .home-wrapper .assesment-readmore button {
+	font-weight: 700;
+}
+
+.home-page-container .home-wrapper .assesment-readmore button:hover,
+.home-page-container .home-wrapper .assesment-readmore button:active,
+.home-page-container .home-wrapper .assesment-readmore button:focus {
+	color: #ababab;
+	outline: none;
+	text-decoration: none;
 }
 
 .home-page-container .immigration-title {
@@ -16,6 +33,27 @@
 .home-page-container .flex-slider-container {
     width: 100%;
     overflow-y: hidden;
+}
+
+.home-page-container .flex-slider-container .flex-caption {
+	background: #000;
+	bottom: 50%;
+	color: #fff;
+	font-size: 24px;
+	left: calc(50% - 150px);
+	opacity: 0.5;
+	padding: 15px;
+	position: absolute;
+    width: 300px;
+}
+
+.home-page-container .flex-slider-container .flex-caption ol {
+    padding: 0 15px 0;
+}
+
+.home-page-container .flex-slider-container  .flexslider .slides > li{
+    max-height: 720px;
+	position: relative;
 }
 
 .home-page-container .have-a-question-wrapper .title,
@@ -40,22 +78,43 @@
 .home-page-container .assesment-title {
     color: #2b2b2b;
     font-size: 24px;
+	font-weight: 600;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
 .home-page-container .assesment-details {
     color: #ababab;
+	margin-bottom: 30px;
+}
+
+.home-page-container .have-a-question-wrapper {
+	margin: 25px 0;
+}
+
+.home-page-container .visa-types,
+.home-page-container .home-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home-page-container .visa-types > .visa-outer-wrapper,
+.home-page-container .home-wrapper  > .assesment-wrapper {
+	display: flex;
+	flex-direction: column;
 }
 
 .home-page-container .visa-types .visa-category-wrapper {
     background: #2B2B2B;
     color: #FFFFFF;
+	height: 100%;
+	position: relative;
     text-align: center;
 }
 
 .home-page-container .visa-types .visa-category {
-    padding: 10px 10px 0 10px;
+    margin-bottom: 40px;
+	padding: 10px 10px 0 10px;
 }
 
 .home-page-container .visa-types .visa-category .visa-title {
@@ -70,6 +129,10 @@
 }
 
 .home-page-container .visa-types .visa-read-more {
-    margin-top: 15px;
+    bottom: 0;
+	cursor: pointer;
+	margin-top: 15px;
     padding: 10px;
+	position: absolute;
+    width: 100%;
 }
