@@ -1,1 +1,40 @@
-hi this is contacts
+<div class="container">
+	<div class="contact-container">
+		<div class="col-md-12 no-padding">
+            <div class="form-group contact-container-title">
+                <strong>
+                    How to find us
+                </strong>
+            </div>
+            <div class="form-group">
+                <div id="map"></div>
+            </div>
+            <div class="address-label">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci.
+            </div>
+            <div class="form-group">
+                <strong>8901 Marmora Road</strong><br>
+                <strong>Glassgow US</strong>
+            </div>
+            <div class="form-group mobile-info">
+                <span>Mobile: +91 98765 43210</span><br>
+                <span>Mobile: +91 98765 43210</span><br>
+                <span class="email">Email: <a href="mailto:webmaster@example.com">abc@gmail.com</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbDFCBvr5J1rxkos-agMa-hm3vY0LgmVE&callback=initMap"></script>
