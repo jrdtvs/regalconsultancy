@@ -1,3 +1,16 @@
+<div class="mobile-menu-items blue-background" ng-if="isOpenMobMenu">
+	<a href="#" id="closeResponsiveMenu" class="cross-button" ng-click="toggleMobileMenu()"></a>
+	<div class="mobile-nav">
+		<nav>
+			<ul>
+				<li ng-class="{'active': getCurrentStateName() == 'home'}"><a href="#/home" ng-click="toggleMobileMenu()"><strong>Home</strong></a></li>
+				<li ng-class="{'active': getCurrentStateName() == 'about'}"><a href="#/about" ng-click="toggleMobileMenu()"><strong>About Us</strong></a></li>
+				<li ng-class="{'active': getCurrentStateName() == 'services'}"><a href="#/services" ng-click="toggleMobileMenu()"><strong>Services</strong></a></li>
+				<li ng-class="{'active': getCurrentStateName() == 'contact'}"><a href="#/contact" ng-click="toggleMobileMenu()"><strong>Contact Us</strong></a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
 <div class="container">
 	<div class="logo-wrapper">
 		<div class="logo">
@@ -7,6 +20,7 @@
 			<strong>A Register Immigration Firm</strong>
 		</div>
 	</div>
+	<span class="mobile-menu" ng-click="toggleMobileMenu()"></span>
 </div>
 <div class="navbar-wrapper hidden-sm">
     <div class="container">

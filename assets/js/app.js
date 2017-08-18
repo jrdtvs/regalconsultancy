@@ -50,8 +50,14 @@ app.config(["$stateProvider", "$urlRouterProvider", "$locationProvider", functio
 }]);
 
 app.controller('AppController', ['$scope', '$state', function($scope, $state) {
+	$scope.isOpenMobMenu = false;
+	
 	$scope.getCurrentStateName = function() {
 		return $state.current.name;
+	}
+	
+	$scope.toggleMobileMenu = function() {
+		$scope.isOpenMobMenu = !$scope.isOpenMobMenu;
 	}
 }]);
 
