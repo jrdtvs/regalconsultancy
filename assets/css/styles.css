@@ -1,6 +1,6 @@
-/* @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import '../../node_modules/font-awesome/css/font-awesome.css';
-@import '../../node_modules/flexslider/flexslider.css'; */
+@import '../../node_modules/flexslider/flexslider.css';
 @import 'font-face.css';
 @import 'colors.css';
 @import 'main.css';
@@ -9,3 +9,4 @@
 @import 'about.css';
 @import 'services.css';
 @import 'contact.css';
+@import 'responsive.css';

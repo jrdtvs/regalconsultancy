@@ -1,0 +1,43 @@
+@media only screen and (max-width: 768px) {
+    .hidden-sm {
+        display: none;
+    }
+	
+	.home-page-container .container {
+		margin-top: 15px;
+	}
+	
+	header .logo-wrapper .resigter-tag-line{
+		margin-top: 15px;
+	}
+	
+	.about-container .about-img {
+		margin-bottom: 15px;
+		padding: 0 15px;
+	}
+	
+	.about-container .about-container-title-wrapper {
+		padding: 0;
+	}
+	
+	.about-container .about-container-title {
+		padding-left: 15px;
+	}
+	
+	.about-container .use-services,
+	.about-container .use-services-desc ,
+	.about-container .why-consulting ,
+	.about-container .why-consulting-desc,
+	.about-container .years-experience {
+		padding-left: 10px;
+	}
+	
+	.services-container .image-wrapper,
+	.services-container .visa-type-wrapper {
+		padding: 0px;
+	}
+	
+	.services-container .image-wrapper {
+		margin-bottom: 10px;
+	}
+}
